@@ -1,0 +1,114 @@
+/*
+ * (C) DevInfinity.io 2020
+ */
+html,
+body,
+main {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: #457cfe;
+    /*background: linear-gradient(130deg, #09c778, #01a0f9);*/
+    background: -webkit-linear-gradient(130deg, #711cff, #1bdafd);
+    background: linear-gradient(130deg, #711cff, #1bdafd);
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    line-height: 1.15;
+    letter-spacing: 1px;
+}
+
+main {
+    background: url('../svg/background.svg') no-repeat bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 225px;
+    margin: 0 auto 1.5rem;
+}
+
+h1, h2 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.svg-inline {
+    display: inline-block;
+    height: 1.2em;
+    vertical-align: -.225em;
+}
+
+[data-encoded-email] .at {
+    content: '@';
+}
+
+[data-encoded-email] .dot {
+    content: '.';
+}
+
+.button {
+    display: inline-block;
+    border-radius: 25px;
+    background: transparent;
+    color: #fff;
+    border: solid 1px #fff;
+    font-size: 1.1rem;
+    transition: all 0.25s;
+    margin: 5px 8px;
+    padding: 10px 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background: #fff;
+    border: 1px solid #fff;
+    color: #457cfe;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+#twitter:hover {
+    color: #1da1f2;
+}
+
+#discord:hover {
+    color: #7289da;
+}
+
+#github:hover {
+    color: #171515;
+}
+
+@media (max-width: 350px) {
+    main {
+        background: none;
+    }
+}
+
+@media (max-width: 400px) {
+    img {
+        display: none;
+    }
+}
