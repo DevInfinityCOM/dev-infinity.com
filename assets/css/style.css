@@ -1,5 +1,7 @@
 /*
- * (C) DevInfinity.io 2020
+ * DevInfinity 2019-2021
+ *
+ * https://dev-infinity.com
  */
 html,
 body,
@@ -10,18 +12,13 @@ main {
 
 body {
     background: #457cfe;
-    /*background: linear-gradient(130deg, #09c778, #01a0f9);*/
-    background: -webkit-linear-gradient(130deg, #711cff, #1bdafd);
     background: linear-gradient(130deg, #711cff, #1bdafd);
-    font-family: 'Lato', sans-serif;
     color: #fff;
-    line-height: 1.15;
     letter-spacing: 1px;
 }
 
 main {
-    background: url('../svg/background.svg') no-repeat bottom;
-    background-size: cover;
+    background: url('../svg/background.svg') no-repeat bottom / cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,20 +26,14 @@ main {
     padding: 0 5px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    width: 225px;
-    margin: 0 auto 1.5rem;
-}
-
-h1, h2 {
+h1,
+h2 {
     font-weight: 600;
 }
 
 h1 {
     font-size: 2.5rem;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
 }
 
 h2 {
@@ -55,17 +46,22 @@ p {
     margin-bottom: 1rem;
 }
 
+.logo {
+    width: 225px;
+    margin: 0 auto 1.5rem;
+}
+
 .svg-inline {
     display: inline-block;
     height: 1.2em;
-    vertical-align: -.225em;
+    vertical-align: -0.225em;
 }
 
-[data-encoded-email] .at {
+[data-encoded-email] .at::before {
     content: '@';
 }
 
-[data-encoded-email] .dot {
+[data-encoded-email] .dot::before {
     content: '.';
 }
 
@@ -89,10 +85,6 @@ p {
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 }
 
-#twitter:hover {
-    color: #1da1f2;
-}
-
 #discord:hover {
     color: #7289da;
 }
@@ -101,14 +93,8 @@ p {
     color: #171515;
 }
 
-@media (max-width: 350px) {
-    main {
-        background: none;
-    }
-}
-
 @media (max-width: 400px) {
-    img {
+    .logo {
         display: none;
     }
 }
