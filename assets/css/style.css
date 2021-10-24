@@ -23,7 +23,7 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 5px;
+    padding: 0 0.5rem;
 }
 
 h1,
@@ -51,50 +51,36 @@ p {
     margin: 0 auto 1.5rem;
 }
 
-.svg-inline {
+.bi {
     display: inline-block;
-    height: 1.2em;
     vertical-align: -0.225em;
-}
-
-[data-encoded-email] .at::before {
-    content: '@';
-}
-
-[data-encoded-email] .dot::before {
-    content: '.';
+    height: 1.05em;
+    width: 1.05em;
 }
 
 .button {
     display: inline-block;
-    border-radius: 25px;
-    background: transparent;
     color: #fff;
-    border: solid 1px #fff;
     font-size: 1.1rem;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 3rem;
     transition: all 0.25s;
-    margin: 5px 8px;
-    padding: 10px 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin: 0.25rem 0.5rem;
+    padding: 0.6rem 1.2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .button:hover {
     background: #fff;
-    border: 1px solid #fff;
     color: #457cfe;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.65rem 1.2rem rgba(0, 0, 0, 0.1);
 }
 
 #discord:hover {
-    color: #7289da;
+    color: #5865f2;
 }
 
 #github:hover {
-    color: #171515;
-}
-
-@media (max-width: 400px) {
-    .logo {
-        display: none;
-    }
+    color: #010101;
 }
