@@ -1,8 +1,4 @@
-/*
- * DevInfinity 2019-2021
- *
- * https://dev-infinity.com
- */
+/* DevInfinity - https://dev-infinity.com */
 html,
 body,
 main {
@@ -26,32 +22,18 @@ main {
     padding: 0 0.5rem;
 }
 
-h1,
-h2 {
-    font-weight: 600;
-}
-
 h1 {
+    font-weight: 600;
     font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-p {
-    text-align: center;
     margin-bottom: 1rem;
 }
 
 .logo {
-    width: 225px;
+    width: 350px;
     margin: 0 auto 1.5rem;
 }
 
-.bi {
+.icon {
     display: inline-block;
     vertical-align: -0.225em;
     height: 1.05em;
@@ -73,14 +55,6 @@ p {
 
 .button:hover {
     background: #fff;
-    color: #457cfe;
-    box-shadow: 0 0.65rem 1.2rem rgba(0, 0, 0, 0.1);
-}
-
-#discord:hover {
-    color: #5865f2;
-}
-
-#github:hover {
     color: #010101;
+    box-shadow: 0 0.65rem 1.2rem rgba(0, 0, 0, 0.1);
 }
